@@ -1,0 +1,228 @@
+body {
+    background-color: yellow;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+#container {
+
+    margin-top: 7px;
+}
+
+#header-img {
+    width: 550px;
+    position: fixed;
+}
+
+
+    #heade-img {
+        flex-wrap: wrap;
+        min-height: 275px;
+    }
+
+
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: turquoise;
+    float: right;
+    width: 1338px;
+    
+
+}
+li {
+    float: right;
+    width: 300px;
+ 
+}
+li a {
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+#nav-bar {
+   position: fixed;
+   margin-left: 550px;               
+
+}
+
+@media (min-width:600px) {
+    list-style{
+        font-weight: bold;
+    }
+}
+#information {
+   text-align: center;
+   padding-top: 50px;
+   
+}
+input[type=email] {
+width: 15%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}   
+#email {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#submit {
+width: 15%;
+padding: 12px;
+border: 1px solid orange;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+font-size: 20px;
+background-color: turquoise;
+
+}
+
+#mlb-img {                
+    float: left;
+    width: 150px;
+   
+}
+
+@media (mid-max:600px) {
+    #mlb-img {
+        width: 350px;
+    }
+
+}
+
+#mlb-sports {
+   float: left;
+   position: relative;
+   top: 10px;
+   left: 30px;
+   font-size: 25px;
+
+}
+
+#MLB {
+    margin-top: 80px;
+    margin-left: 350px;
+   
+}
+
+@media (mid-max:500px) {
+#MLB {
+    font-weight: bolder;
+}
+}
+
+
+.clear { 
+clear:both; 
+
+} 
+
+#nhl-img {
+
+    float: left;
+    width: 125px;
+}
+
+#nhl-sports {
+    float: left;
+    position: relative;
+   top: 40px;
+   left: 50px;
+   font-size: 25px;
+}
+
+#NHL {
+    margin-left: 350px;
+    margin-top: 80px;
+
+}
+
+#nba-img {
+
+        float: left;
+        position: relative;
+        left: 260px;
+        top: 80px;
+}
+
+
+#nba-sports  {
+    float: left;
+    position: relative;
+    left: 230px;
+    top: 120px;
+    font-size: 25px;
+}
+    #nfl-img    {
+        
+        float: left;
+        position: relative;
+        top: 120px;
+        left:340px;
+        width: 130px;
+
+    }
+
+    #nfl-sports {
+        float: left;
+        position:relative;
+        top: 150px;
+        left: 400px;
+        font-size:25px;
+    }
+
+    #NFL {
+        margin-top: 50px;
+    }
+
+   #video {
+       position: relative;
+       top: 300px;
+        left: 600px;
+   } 
+
+   #flex {
+        position: relative;
+        top: 450px;
+    
+
+   }
+
+    .flex-container {
+     display: inline-flex;
+     flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: cadetblue;
+     }
+   
+     .flex-container > div {
+    background-color: white;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    color: crimson;
+     }
+
+    

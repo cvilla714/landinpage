@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+
+    <head>
+
+        <title></title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <style type="text/css">
+        
+        
+        #container {
+        
+            margin-top: 7px;
+        }
+        
+        #header-img {
+            width: 550px;
+            position: fixed;
+        }
+        
+        
+            #heade-img {
+                flex-wrap: wrap;
+                min-height: 275px;
+            }
+        
+        
+        
+        ul {
+        
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: turquoise;
+            float: right;
+            width: 1338px;
+            
+        
+        }
+        li {
+            float: right;
+            width: 300px;
+         
+        }
+        li a {
+            display:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        
+        #nav-bar {
+           position: fixed;
+           margin-left: 550px;               
+        
+        }
+        @media (min-width: 600px) {
+            #nav-bar {
+                font-weight: bolder;
+            }
+            
+        }
+     
+        #information {
+           text-align: center;
+           padding-top: 50px;
+           
+        }
+        input[type=email] {
+        width: 15%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }   
+        #email {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        #submit {
+        width: 15%;
+        padding: 12px;
+        border: 1px solid orange;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        font-size: 20px;
+        background-color: turquoise;
+        
+        }
+        
+        #mlb-img {                
+            float: left;
+            width: 150px;
+           
+        }
+        
+     
+               
+        
+        #mlb-sports {
+           float: left;
+           position: relative;
+           top: 10px;
+           left: 30px;
+           font-size: 25px;
+        
+        }
+        
+        #MLB {
+            margin-top: 80px;
+            margin-left: 350px;
+           
+        }
+        
+       
+        
+        .clear { 
+        clear:both; 
+        
+        } 
+        
+        #nhl-img {
+        
+            float: left;
+            width: 125px;
+        }
+        
+        #nhl-sports {
+            float: left;
+            position: relative;
+           top: 40px;
+           left: 50px;
+           font-size: 25px;
+        }
+        
+        #NHL {
+            margin-left: 350px;
+            margin-top: 80px;
+        
+        }
+        
+        #nba-img {
+        
+                float: left;
+                position: relative;
+                left: 260px;
+                top: 80px;
+        }
+        
+        
+        #nba-sports  {
+            float: left;
+            position: relative;
+            left: 230px;
+            top: 120px;
+            font-size: 25px;
+        }
+            #nfl-img    {
+                
+                float: left;
+                position: relative;
+                top: 120px;
+                left:340px;
+                width: 130px;
+        
+            }
+        
+            #nfl-sports {
+                float: left;
+                position:relative;
+                top: 150px;
+                left: 400px;
+                font-size:25px;
+            }
+        
+            #NFL {
+                margin-top: 50px;
+            }
+        
+           #video {
+               position: relative;
+               top: 300px;
+                left: 600px;
+           } 
+        
+           #flex {
+                position: relative;
+                top: 450px;
+            
+        
+           }
+        
+            .flex-container {
+             display: inline-flex;
+             flex-flow: row wrap;
+            justify-content: space-around;
+            background-color: cadetblue;
+             }
+           
+             .flex-container > div {
+            background-color: white;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            line-height: 35px;
+            font-size: 20px;
+            color: crimson;
+             }
+        
+            </style>
+        
+        
+    </head>
+
+        <body>
+
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+            
+
+            <div id="container">
+                    <header id="header">
+                        <div class="logo">
+                            <img id="header-img"  src="https://uploads-ssl.webflow.com/5d4d9f467ec3667f61c819fa/5e0e6d4f8479d50fc85d796e_hpfulq-1234-1024x512.jpg" alt="sports">    
+                        </div>
+                        <nav id="nav-bar">
+                            <ul>
+                                <li><a class="nav-link" href="#NFL">NFL</a></li>
+                                <li><a class="nav-link" href="#NBA">NBA</a></li>
+                                <li><a class="nav-link" href="#NHL">NHL</a></li>
+                                <li><a class="nav-link" href="#MLB">MLB</a></li>
+                            </ul>
+                        </nav>
+                    
+                        <section id="information">
+                            <h1>Stay Up to Date with the latest in Sporst</h1>
+                            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                                <label for="email" >Your Email Address Please</label><br>
+                                <input type="email" id="email" name="email" required placeholder="Please enter a valid email address"><br>
+                                <input type="submit" id="submit" value="Get Info">
+                            </form>
+
+                        </section>
+
+                    </header>
+                    <section id="MLB">
+                        <div>
+                            <img id="mlb-img" src="mlb.png" alt="Major Legue Baseball">
+                            <p id="mlb-sports">All the Lates Injuries / Trades / Contracts Negociations / Suspension and more...</p>
+                        </div>
+                    </section>
+
+                    <div class="clear"></div> 
+
+                    <section id="NHL">
+                        <div>
+                            <img id="nhl-img" src="nhl.png" alt="National Hockey Legue">
+                            <p id="nhl-sports">All the Lates Injuries / Trades / Contracts Negociations / Suspension and more...</p>
+                        </div>
+                    </section>
+
+                    <div class="clear"></div> 
+
+                    <section id="NBA">
+                        <div>
+                            <img id="nba-img" src="nba.png" alt="National Basketball Legue">
+                            <p id="nba-sports">All the Lates Injuries / Trades / Contracts Negociations / Suspension and more...</p>
+                        </div>
+                    </section>
+                    
+                    <div class="clear"></div> 
+
+                    <section id="NFL">
+                        <div>
+                            <img id="nfl-img" src="nfl.jpeg" alt="National Football Legue">
+                            <p id="nfl-sports">All the Lates Injuries / Trades / Contracts Negociations / Suspension and more...</p>
+                        </div>
+                    </section>
+                    
+                    <div class="clear"></div> 
+                    
+                    
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_eaK4DIxB5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <div id="flex">
+                        <div class="flex-container">
+                            <div>Here you can tare a look at the daily transcations on MLB</div>
+                            <div>Here you can see the weather on every game</div>
+                            <div>Here you can take a look at the empires for every MLB game</div>  
+                            <div>Here you can see at the list of Referees for every NBA Game</div>
+                            <div>Here you can see the list of every Referee for every NFL Game</div> 
+                          </div>
+                    </div>
+    
+            </div>  
+        </body>
+    
+</html>
+
