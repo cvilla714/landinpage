@@ -1,12 +1,3 @@
-body {
-    background-color: yellow;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
 
 #container {
 
@@ -18,13 +9,10 @@ body {
     position: fixed;
 }
 
-
-    #heade-img {
+#heade-img {
         flex-wrap: wrap;
         min-height: 275px;
     }
-
-
 
 ul {
 
@@ -35,14 +23,14 @@ ul {
     background-color: turquoise;
     float: right;
     width: 1338px;
-    
-
 }
+
 li {
     float: right;
     width: 300px;
- 
+
 }
+
 li a {
     display:block;
     color:white;
@@ -51,23 +39,18 @@ li a {
     text-decoration: none;
 }
 
-
 #nav-bar {
    position: fixed;
    margin-left: 550px;               
 
 }
 
-@media (min-width:600px) {
-    list-style{
-        font-weight: bold;
-    }
-}
 #information {
    text-align: center;
    padding-top: 50px;
    
 }
+
 input[type=email] {
 width: 15%;
 padding: 12px;
@@ -77,7 +60,8 @@ box-sizing: border-box;
 margin-top: 6px;
 margin-bottom: 16px;
 resize: vertical;
-}   
+}
+
 #email {
     margin-top: 20px;
     text-align: center;
@@ -97,40 +81,63 @@ background-color: turquoise;
 
 }
 
-#mlb-img {                
-    float: left;
-    width: 150px;
-   
+#box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
 }
 
-@media (mid-max:600px) {
-    #mlb-img {
-        width: 350px;
-    }
+.clases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+        
+}
 
+#mlb-img {                
+  
+  /**display: flex;
+    
+    flex-wrap: wrap;
+    
+    /**justify-content: center;
+    align-items: center;**/
+  /**float: left;
+    width: 150px;**/
+   
 }
 
 #mlb-sports {
-   float: left;
+  
+  
+  /**display: flex;
+  
+  flex-wrap: wrap;
+  /**flex-direction: column;
+  justify-content: center;
+  align-items: center;**/
+  /** float: left;
    position: relative;
    top: 10px;
    left: 30px;
-   font-size: 25px;
+   font-size: 25px;**/
 
 }
 
 #MLB {
-    margin-top: 80px;
-    margin-left: 350px;
+
+  /**display: flex;
+  
+  flex-wrap: wrap;
+  /**flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   /** margin-top: 80px;
+    margin-left: 350px;**/
    
 }
-
-@media (mid-max:500px) {
-#MLB {
-    font-weight: bolder;
-}
-}
-
 
 .clear { 
 clear:both; 
@@ -138,91 +145,283 @@ clear:both;
 } 
 
 #nhl-img {
-
-    float: left;
-    width: 125px;
+  
+  
+ /** display: flex;
+  flex-wrap: wrap;
+  /**flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    /**float: left;
+    width: 125px;**/
 }
 
 #nhl-sports {
-    float: left;
+  
+ /** display: flex;
+  flex-wrap: wrap;
+  /**flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   /** float: left;
     position: relative;
    top: 40px;
    left: 50px;
-   font-size: 25px;
+   font-size: 25px;**/
 }
 
 #NHL {
-    margin-left: 350px;
-    margin-top: 80px;
+
+ /** display: flex;
+  flex-wrap: wrap;
+  /**flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   /** margin-left: 350px;
+    margin-top: 80px;**/
 
 }
 
 #nba-img {
-
-        float: left;
+  
+ /** display: flex;
+  flex-wrap: wrap;
+  /**flex-direction: column;
+  justify-content: center;
+  align-items: center;
+       /** float: left;
         position: relative;
         left: 260px;
-        top: 80px;
+        top: 80px;**/
 }
 
 
 #nba-sports  {
-    float: left;
+  
+  /**display: flex;
+  flex-wrap: wrap;
+  /**flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    /**float: left;
     position: relative;
     left: 230px;
     top: 120px;
-    font-size: 25px;
+    font-size: 25px;**/
 }
+
+#NFL {
+/**margin-top: 50px;
+  /**display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /**flex-direction: row;**/
+          
+    }
+
     #nfl-img    {
-        
-        float: left;
+      margin-right: 50px;
+      /** display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /**flex-direction: row;
+      /**float: left;
         position: relative;
         top: 120px;
         left:340px;
-        width: 130px;
+        width: 130px;**/
 
     }
 
     #nfl-sports {
-        float: left;
+     
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+     /** display: flex;
+      /**order:8;
+      /*float: left;
         position:relative;
         top: 150px;
         left: 400px;
         font-size:25px;
-    }
-
-    #NFL {
-        margin-top: 50px;
-    }
+    }*/
+  }
 
    #video {
        position: relative;
-       top: 300px;
+       top: 150px;
         left: 600px;
    } 
 
-   #flex {
-        position: relative;
-        top: 450px;
-    
+    #intel {
+    margin-top: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+      }
 
-   }
-
-    .flex-container {
-     display: inline-flex;
-     flex-flow: row wrap;
-    justify-content: space-around;
-    background-color: cadetblue;
-     }
    
-     .flex-container > div {
-    background-color: white;
-    width: 200px;
-    margin: 10px;
+   .sports {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    line-height: 35px;
-    font-size: 20px;
-    color: crimson;
-     }
+    width: calc(100%  / 4);
+    margin: 30px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    height:auto;
+  }
 
+  .sports > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .sports > h2 {
+    margin-top: 30px;
+      }
+  
+  .sports > ol {
+   justify-content: center;
+        
+  }
+  
+  .sports > ol > li {
+    justify-content: center;
+    list-style-position: inside;
+    
+  }
+
+  #mlb-btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    border-radius: 2px;
+    background: transparent;
+    background-color: #f1c40f;
+    cursor: pointer;
+
+  }
+
+  #mlb-btn:hover {
+    background-color:red;
+    transition: background-color 1s;
+  }
+
+  #nhl-btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    border-radius: 2px;
+    background: transparent;
+    background-color: #f1c40f;
+    cursor: pointer;
+
+  }
+
+  #nhl-btn:hover {
+    background-color:red;
+    transition: background-color 1s;
+  }
+
+  #nba-btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    border-radius: 2px;
+    background: transparent;
+    background-color: #f1c40f;
+    cursor: pointer;
+
+  }
+
+  #nba-btn:hover {
+    background-color:red;
+    transition: background-color 1s;
+  }
+
+  #nfl-btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    border-radius: 2px;
+    background: transparent;
+    background-color: #f1c40f;
+    cursor: pointer;
+
+  }
+
+  #nfl-btn:hover {
+    background-color:red;
+    transition: background-color 1s;
+  }
+
+  
+ 
+  @media (max-width: 800px) {
+    #intel {
+      flex-direction: column;
+    }
+
+    .sports {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  @media (max-height:500px) {
+    #MLB {
+        font-weight: bolder;
+    }
+  }
+
+    @media (min-width: 600px) {
+        #nav-bar {
+            font-weight: bolder;
+        }
+        
+    }
+   
+    
     
