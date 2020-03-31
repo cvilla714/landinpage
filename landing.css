@@ -82,21 +82,28 @@ background-color: turquoise;
 }
 
 #box-container {
-  display: flex;
-  flex-direction: row;
-  justify-content:space-between;
+  max-width: 1200px;
+  margin:40px auto 0 auto;
+  /**flex-direction: row;
+  
 }
 
 .clases {
-    display: flex;
+    
+  /**display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: center;**/
     
         
 }
 
 #mlb-img {                
+  flex: 1;
+  /**order: 1;**/
+  width:  250px;
+  padding:15px;
+  box-sizing:border-box;
   
   /**display: flex;
     
@@ -105,12 +112,15 @@ background-color: turquoise;
     /**justify-content: center;
     align-items: center;**/
   /**float: left;
-    width: 150px;**/
+    **/
    
 }
 
 #mlb-sports {
-  
+  flex: 1;
+  /**order: 2;**/
+  padding:15px;
+  box-sizing:border-box;
   
   /**display: flex;
   
@@ -127,7 +137,7 @@ background-color: turquoise;
 }
 
 #MLB {
-
+  flex: 1;
   /**display: flex;
   
   flex-wrap: wrap;
@@ -145,7 +155,11 @@ clear:both;
 } 
 
 #nhl-img {
-  
+  flex: 1;
+  /**order: 3;**/
+  width:135px;
+  padding:15px;
+  box-sizing:border-box;
   
  /** display: flex;
   flex-wrap: wrap;
@@ -153,10 +167,14 @@ clear:both;
   justify-content: center;
   align-items: center;
     /**float: left;
-    width: 125px;**/
+    **/
 }
 
 #nhl-sports {
+  flex: 1;
+  /**order: 4;**/
+  padding:15px;
+  box-sizing:border-box;
   
  /** display: flex;
   flex-wrap: wrap;
@@ -171,7 +189,7 @@ clear:both;
 }
 
 #NHL {
-
+  flex: 1;
  /** display: flex;
   flex-wrap: wrap;
   /**flex-direction: column;
@@ -183,6 +201,11 @@ clear:both;
 }
 
 #nba-img {
+  flex: 1;
+  /**order: 5;**/
+  width: 245px;
+  padding:15px;
+  box-sizing:border-box;
   
  /** display: flex;
   flex-wrap: wrap;
@@ -197,6 +220,10 @@ clear:both;
 
 
 #nba-sports  {
+  flex: 1;
+  /**order: 6;**/
+  padding:15px;
+  box-sizing:border-box;
   
   /**display: flex;
   flex-wrap: wrap;
@@ -211,6 +238,7 @@ clear:both;
 }
 
 #NFL {
+  flex: 1;
 /**margin-top: 50px;
   /**display: flex;
   flex-wrap: wrap;
@@ -222,7 +250,13 @@ clear:both;
     }
 
     #nfl-img    {
-      margin-right: 50px;
+      flex: 1;
+      /**order: 7;**/
+      width: 120px;
+      padding:15px;
+      box-sizing:border-box;
+  
+      /**margin-right: 50px;**/
       /** display: flex;
      flex-wrap: wrap;
      flex-direction: column;
@@ -238,8 +272,12 @@ clear:both;
     }
 
     #nfl-sports {
-     
-      flex-wrap: wrap;
+      flex: 1;
+      /**order: 8;**/
+      padding:15px;
+      box-sizing:border-box;
+  
+      /**flex-wrap: wrap;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -253,6 +291,7 @@ clear:both;
         font-size:25px;
     }*/
   }
+
 
    #video {
        position: relative;
@@ -422,6 +461,12 @@ clear:both;
         }
         
     }
-   
-    
+@media (min-width:900px) {
+  #box-container {
+    display: flex;
+    align-items: stretch;
+    justify-content:space-between;
+  }
+} 
+  
     
